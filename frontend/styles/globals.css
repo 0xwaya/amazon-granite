@@ -7,12 +7,12 @@
 :root {
   color-scheme: dark;
   --bg: 8 12 24;
-  --surface: 14 22 38;
-  --panel: 19 30 52;
+  --surface: 12 18 32;
+  --panel: 16 24 41;
   --text: 231 238 248;
-  --muted: 151 164 186;
+  --muted: 168 175 191;
   --accent: 74 144 226;
-  --accent-dark: 41 98 177;
+  --accent-dark: 55 72 102;
   --border: 52 72 102;
 }
 
@@ -61,12 +61,12 @@ body {
   background:
     radial-gradient(
       circle at top left,
-      rgba(74, 144, 226, 0.18),
-      transparent 28%
+      rgba(73, 96, 134, 0.26),
+      transparent 30%
     ),
     radial-gradient(
       circle at 80% 20%,
-      rgba(125, 211, 252, 0.12),
+      rgba(74, 144, 226, 0.14),
       transparent 24%
     ),
     linear-gradient(180deg, rgba(12, 18, 34, 0.96), rgba(8, 12, 24, 1));
@@ -123,29 +123,40 @@ a {
   display: flex;
   min-width: 0;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.55rem;
 }
 
 .nav-brand-wordmark {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(1.5rem, 5vw, 2.3rem);
-  font-weight: 800;
-  line-height: 0.86;
-  letter-spacing: 0.01em;
+  font-size: clamp(1.25rem, 4.2vw, 1.95rem);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: 0.02em;
   color: rgb(184 184 180);
   text-shadow:
     0 1px 0 rgba(255, 255, 255, 0.08),
     0 10px 28px rgba(8, 15, 33, 0.22);
   white-space: nowrap;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
-.nav-brand-amazon {
+.nav-brand-primary {
+  display: block;
   color: inherit;
 }
 
-.nav-brand-granite {
+.nav-brand-secondary {
+  display: block;
+  margin-top: 0.05rem;
+  font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.54em;
+  font-weight: 700;
+  letter-spacing: 0.43em;
+  text-indent: 0.43em;
+  text-transform: uppercase;
   color: inherit;
 }
 
@@ -158,10 +169,10 @@ a {
     rgba(var(--panel), 0.95),
     rgba(var(--surface), 0.8)
   );
-  padding: 0.15rem 0.38rem;
+  padding: 0.17rem 0.44rem;
   font-size: 0.5rem;
   font-weight: 800;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
   color: rgb(184 184 180);
